@@ -15,9 +15,10 @@ int main () {
     for (i=0; i<10; i++){
         for (j=0; j<10; j++){
             if (vet [i] > vet[i+1]){
+                //printf ("%d maior que %d, trocando\n", vet[i], vet[i+1]);
              aux = vet[i];
-             vet[i+1] = vet[i];
-             vet[i+1] = aux;
+             vet [i+1] = vet[i];
+             vet[i] = aux;
              
              
              }
@@ -25,7 +26,7 @@ int main () {
     }
     
     for (i=0; i<10; i++){
-      printf ("num: = %d\n", num);  
+      printf ("num[%d]: = %d\n", i, vet[i]);  
     }
     
 return 0;
